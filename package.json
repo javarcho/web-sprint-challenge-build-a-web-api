@@ -3,12 +3,14 @@
     "version": "0.0.1",
     "main": "index.js",
     "scripts": {
+        "start": "node index.js",
         "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
         "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BloomInstituteOfTechnology/web-sprint-challenge-build-a-web-api"
+        "url": "git+https://github.com/BloomInstituteOfTechnology/web-sprint-challenge-build-a-web-api",
+        "server": "nodemon index.js"
     },
     "dependencies": {
         "express": "4.17.1",

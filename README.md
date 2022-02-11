@@ -147,7 +147,23 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+
+Node.js - uses the same programming language (JavaScript) and paradigm for both client and server, using the same language, we minimize context switching and make it easy to share code between the client and the server, using JavaScript gives us access to the npm repository
+
+Express - the express framework is built on top of the node. js framework and helps in fast-tracking development of server-based applications
+
 1. Understand and explain the use of Middleware.
+
+middleware functions can get the request and response objects, operate on them, and trigger some actions
+
 1. The basic principles of the REST architectural style.
+
+an API that uses HTTP requests to access and use data
+
 1. Understand and explain the use of Express Routers.
+
+express router is a class which helps us to create router handlers, by router handler i mean to not just providing routing to our app but also can extend this routing to handle validation, handle 404 or other errors etc
+
 1. Describe tooling used to manually test the correctness of an API.
+
+for each API request, the test would need to take the following action; verify correct HTTP status code, response payload, response headers, correct application state, basic performance sanity, the next API testing tool is postman
